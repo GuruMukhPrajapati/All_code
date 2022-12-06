@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html{
+            font-size: 10px;
+            font-family: "lato",Arial, Helvetica, sans-serif ;
+        }
+    
+    body{
+            width: 100%;
+            height: 100%;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(-45deg,#EE7755,#E73C7E,#23A6D5,#23D5AB);
+            background-size: 400% 400%;
+            position: relative;
+            animation: change 5s ease-in-out infinite; 
+        }
+        h1{
+            font-size: 1.5rem;
+            font-family: "lato",Arial, Helvetica, sans-serif ;
+            text-transform:uppercase ;
+            letter-spacing: 1.2px;
+            
+            position: absolute;
+            top: 3%;
+            left: -4%;
+            transform: translate(52%);
+            padding: 5rem,10rem;
+        }
+        @keyframes change {
+        0%{
+            background-position: 0 50%;
+        }
+        50%{
+            background-position: 100% 50%;
+        }
+        100%{
+            background-position: 0 50%;
+        }
+       
+    }
+</style>
+</head>
+<body>
+        <h1> <u> Login Here </u></h1>
+        <form name="loginform" method="post"action="traget.html"> <br> <br> <br> <br>   
+            <font size="4px"> Username </font> &nbsp; <input type="text" name="username" id="username"/> <br> <br>
+            
+            <font size="4px"> Password</font> &nbsp; &nbsp; <input type="password" name="password" id="password"/> &nbsp; <br>
+            <br>
+
+            <input type="button"onclick="login(loginform)" value="login"/> 
+
+            <input type="reset" name="" id="">
+            <br>    
+            <a href=" <input type="reset" name="" id=""> </a>
+                <br>
+                <font size="4px"> Are you new user</font> <a href=file:///C:/Users/goura.GURUMUKH/Desktop/register%20(2).html> <font size="4px"> SingUp </font>
+                    </a>
+                
+
+
+
+        </form>
+        <script>
+function login(loginform)
+{
+    if(loginform.username.value && loginform.password.value)
+    {
+        var username=document.getElementById("username").value;
+        document.write('<html><body><h1><center>')
+        document.write("welcome" + " ");
+        document.write(username);
+        document.write('</center></h1></body></html>');
+    }
+    
+        else
+        alert("plz enter your Username & password");
+    
+
+}
+
+        </script>
+
+
+    
+</body>
+</html>

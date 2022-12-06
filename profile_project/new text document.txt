@@ -1,0 +1,63 @@
+<div calss="social-app flex">
+    <span><a href="https://www.instagram.com/gurumukhprajapat/"><i class="fa-brands fa-square-twitter"></i></a></span>
+    <span><a href=""><span class="fa-brands fa-facebook"></span></a></span>
+    <span><a href=""><span class="fa-brands fa-square-twitter"></span></a></span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.social-app{
+display: flex;
+position: absolute;
+top: 70%;
+left: 50%;
+transform:translate(-5%, -5%) ;
+
+}
+span{
+    list-style: none;
+
+}
+span a {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(252, 252, 252);
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 5rem;
+    display: inline-table;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 1.1px solid yellow;
+    z-index: 23;
+
+ 
+}
+span a.social{
+    position: relative;
+    color: #45a1b1;
+    transition: .4s;
+z-index: 3;
+}
+sapn a:hover .social{
+    color: rgb(166, 32, 32);
+    transform: rotateY(360deg);
+}
