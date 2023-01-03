@@ -1,0 +1,137 @@
+-Step 1.1 Open location of the Office installed on your PC.
+
+cd /d %ProgramFiles%\Microsoft Office\Office16
+cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
+
+
+Step 1.3: Convert your retail license to volume one.
+
+for /f %x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+
+Step 1.4: Activate your Office using KMS client key.
+Make sure your PC is connected to the internet, then run the following command.
+
+cscript ospp.vbs /setprt:1688
+cscript ospp.vbs /unpkey:6MWKP >nul
+cscript ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP
+cscript ospp.vbs /sethst:ms8.us.to
+cscript ospp.vbs /act
+
+If you see the error 0xC004F074, it means that your internet connection is unstable or the server is busy. Please make sure your device is online and try the command “act” again until you succeed.
+
+Here is all the text you will get in the command prompt window.
+
+C:\Windows\system32>cd /d %ProgramFiles%\Microsoft Office\Office16
+ C:\Program Files\Microsoft Office\Office16>cd /d %ProgramFiles(x86)%\Microsoft Office\Office16
+ The system cannot find the path specified.
+ C:\Program Files\Microsoft Office\Office16>for /f %x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%x"
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_KMS_Client_AE-ppd.xrm-ms"
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Installing Office license: ..\root\licenses16\proplus2019vl_kms_client_ae-ppd.xrm-ms
+ Office license installed successfully.
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_KMS_Client_AE-ul-oob.xrm-ms"
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Installing Office license: ..\root\licenses16\proplus2019vl_kms_client_ae-ul-oob.xrm-ms
+ Office license installed successfully.
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_KMS_Client_AE-ul.xrm-ms"
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Installing Office license: ..\root\licenses16\proplus2019vl_kms_client_ae-ul.xrm-ms
+ Office license installed successfully.
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_MAK_AE-pl.xrm-ms"
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Installing Office license: ..\root\licenses16\proplus2019vl_mak_ae-pl.xrm-ms
+ Office license installed successfully.
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_MAK_AE-ppd.xrm-ms"
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Installing Office license: ..\root\licenses16\proplus2019vl_mak_ae-ppd.xrm-ms
+ Office license installed successfully.
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_MAK_AE-ul-oob.xrm-ms"
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Installing Office license: ..\root\licenses16\proplus2019vl_mak_ae-ul-oob.xrm-ms
+ Office license installed successfully.
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /inslic:"..\root\Licenses16\ProPlus2019VL_MAK_AE-ul-phn.xrm-ms"
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Installing Office license: ..\root\licenses16\proplus2019vl_mak_ae-ul-phn.xrm-ms
+ Office license installed successfully.
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /setprt:1688
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Successfully applied setting.
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /unpkey:6MWKP >nul
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /sethst:ms8.us.to
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Successfully applied setting.
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>cscript ospp.vbs /act
+ Microsoft (R) Windows Script Host Version 5.812
+ Copyright (C) Microsoft Corporation. All rights reserved.
+ ---Processing--------------------------
+ Installed product key detected - attempting to activate the following product:
+ SKU ID: 85dd8b5f-eaa4-4af3-a628-cce9e77c9a03
+ LICENSE NAME: Office 19, Office19ProPlus2019VL_KMS_Client_AE edition
+ LICENSE DESCRIPTION: Office 19, VOLUME_KMSCLIENT channel
+ Last 5 characters of installed product key: 6MWKP
+
+
+ ---Exiting-----------------------------
+ C:\Program Files\Microsoft Office\Office16>
+
+
+Right now the Office is activated successfully.
+
+
+
+Method 2: Using batch scripts
+
+
+Step 2.1: Copy the following code into a new text document.
+
+@echo off
+title Activate Microsoft Office 2019 (ALL versions) for FREE - MSGuides.com&cls&echo =====================================================================================&echo #Project: Activating Microsoft software products for FREE without additional software&echo =====================================================================================&echo.&echo #Supported products:&echo - Microsoft Office Standard 2019&echo - Microsoft Office Professional Plus 2019&echo.&echo.&(if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16")&(if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16")&(for /f %%x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&(for /f %%x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&echo.&echo ============================================================================&echo Activating your Office...&cscript //nologo slmgr.vbs /ckms >nul&cscript //nologo ospp.vbs /setprt:1688 >nul&cscript //nologo ospp.vbs /unpkey:6MWKP >nul&set i=1&cscript //nologo ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP >nul||goto notsupported
+:skms
+if %i% GTR 10 goto busy
+if %i% EQU 1 set KMS=kms7.MSGuides.com
+if %i% EQU 2 set KMS=ms8.us.to
+if %i% EQU 3 set KMS=ms9.us.to
+if %i% GTR 3 goto ato
+cscript //nologo ospp.vbs /sethst:%KMS% >nul
+:ato
+echo ============================================================================&echo.&echo.&cscript //nologo ospp.vbs /act | find /i "successful" && (echo.&echo ============================================================================&echo.&echo #My official blog: MSGuides.com&echo.&echo #How it works: bit.ly/kms-server&echo.&echo #Please feel free to contact me at msguides.com@gmail.com if you have any questions or concerns.&echo.&echo #Please consider supporting this project: donate.msguides.com&echo #Your support is helping me keep my servers running 24/7!&echo.&echo ============================================================================&choice /n /c YN /m "Would you like to visit my blog [Y,N]?" & if errorlevel 2 exit) || (echo The connection to my KMS server failed! Trying to connect to another one... & echo Please wait... & echo. & echo. & set /a i+=1 & goto skms)
+explorer "http://MSGuides.com"&goto halt
+:notsupported
+echo ============================================================================&echo.&echo Sorry, your version is not supported.&echo.&goto halt
+:busy
+echo ============================================================================&echo.&echo Sorry, the server is busy and can't respond to your request. Please try again.&echo.
+:halt
+pause >nul

@@ -1,0 +1,20 @@
+do
+Set wshshell = wscript.CreateObject("WScript.Shell")
+Wshshell.run "Notepad"
+wscript.sleep 100
+wshshell.sendkeys "E"
+wscript.sleep 100
+wshshell.sendkeys "R"
+wscript.sleep 100
+wshshell.sendkeys "R"
+wscript.sleep 100
+wshshell.sendkeys "O"
+wscript.sleep 100
+wshshell.sendkeys "R"
+wscript.sleep 100
+wshshell.sendkeys "6"
+wscript.sleep 100
+wshshell.sendkeys "9"
+wscript.sleep 100
+wshshell.sendkeys "!"
+loop

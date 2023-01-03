@@ -1,0 +1,9 @@
+@echo off
+:a
+www.youtube.com
+www.facebook.com
+www.yahoo.com
+www.youtube.com
+www.facebook.com
+www.yahoo.com
+goto :a

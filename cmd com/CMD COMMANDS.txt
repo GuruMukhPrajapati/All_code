@@ -1,0 +1,12 @@
+ CMD COMMANDS
+
+
+-Hide any folder - attrib +h +s +r folder name
+-dishide that hide folder - attrib -h -s -r folder name
+-system info cmd - systeminfo
+- windows version info - sys
+- ip address - ipconfig
+- network all info - ipconfig /all
+- all netwirk connection - ntstat
+-  ek type ke file directory mia deek ne k li ye - dir \* .mp3 /s /p 
+- Display Alternate Data Streams[folder deek ne leye ek disk mai] (ADS) - dir /R

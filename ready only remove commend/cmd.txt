@@ -1,0 +1,13 @@
+diskpart
+
+list disk
+
+select disk 0
+
+attribute disk
+
+attribute disk clear readonly
+
+IF U WANT TO ENABLE READONLY THE TYPE---
+
+attribute disk set readonly 
