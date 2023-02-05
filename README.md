@@ -20,5 +20,5 @@ THIS IS MADE FOR PERSONAL AND PUBLIC USE AND SPECIALLY ACE 1ST YEAR STUDENT
 https://www.instagram.com/gurumukhprajapat/
 
 
-![Logo](https://www.linkpicture.com/q/acae001c72b447c2b1591a3840aaf16c.png)
+![Logo](https://www.linkpicture.com/q/git_1.png)
 
