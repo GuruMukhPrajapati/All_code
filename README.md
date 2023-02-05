@@ -1,6 +1,24 @@
-## live demo 
 
-| site Name         |      link                                                        |
-| ----------------- | ------------------------------------------------------------------ |
-| heart_rain | [heart_rain](https://rain-of-dill.netlify.app/) | 
-| hand_burger | [hand_burger_icon](https://hand-burger.netlify.app/)
+## AUTHORS
+
+- [@GuruMukhPrajapati](https://github.com/GuruMukhPrajapati)
+
+
+# WHAT YOU GET FORM THIS GITHUB
+
+THIS IS MADE FOR PERSONAL AND PUBLIC USE AND SPECIALLY ACE 1ST YEAR STUDENT 
+- ALL BASIC CODE  AND SOME ADVANCED CODES OF HTML
+- ALL CODES OF C LAGUAGE THAT ARE TOUGHT
+- CMD SCRIPS
+- BOOT SCRITS
+- OFFICE ALL VERSION ACTIVATION SOLUTION
+
+
+
+## INSTAGRAM FOR JOIN GITHUB
+
+https://www.instagram.com/gurumukhprajapat/
+
+
+![Logo](https://www.linkpicture.com/q/acae001c72b447c2b1591a3840aaf16c.png)
+
