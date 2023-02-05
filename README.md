@@ -1,4 +1,5 @@
-![Logo](https://www.linkpicture.com/q/1675600169996-thumbnail_3.jpeg)
+![welcome](https://user-images.githubusercontent.com/117162170/216831920-e20ac7e4-a934-4d77-b734-223fc9309662.gif)
+
 ## AUTHORS
 
 - [@GuruMukhPrajapati](https://github.com/GuruMukhPrajapati)
