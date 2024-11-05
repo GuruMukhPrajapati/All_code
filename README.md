@@ -26,7 +26,10 @@ https://www.instagram.com/gurumukhprajapat/
  [CLICK TO DOWNLODE](https://drive.google.com/file/d/1ql6c9hdZF0MzvdmPSE63u-Nw1GK6ejJQ/view?usp=share_link)
 ## ACTIVATION KEYS 
 - GMG3P-FHGXW-VTQ94-4QW8F-VG2HM
-- RHMX7-M3T4C-2JF7R-VTDJV-KPBMB 
+- RHMX7-M3T4C-2JF7R-VTDJV-KPBMB
+
+## git vs code uplode : 
+- https://www.youtube.com/watch?v=IeL7iq7Lb90
 
 
 
